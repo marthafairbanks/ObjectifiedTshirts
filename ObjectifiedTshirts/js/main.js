@@ -90,11 +90,12 @@ function addToCart(color){
 		orangeCart.className = "icon five subbox";
 	}
 
+
 	var cartHTML = "";
 
 	cart.forEach(function(tShirt){
-		var itemString = tShirt.dateadded + " | " + "<i>" + tShirt.title +"</i>" +" | "+ tShirt.color  + " | "+ tShirt.size +" | "+ "$"+ tShirt.price;
-		cartHTML+= itemString + "</br><hr>";
+		var itemString = "<sup><b>X</b></sup>" + "&nbsp;&nbsp; " + tShirt.dateadded + " <br> " + "<i>" + tShirt.title +"</i>" +" | "+ tShirt.color  + " | "+ tShirt.size +" | "+ "$"+ tShirt.price;
+		cartHTML+= itemString  + "<hr>";
 	});
 
 
